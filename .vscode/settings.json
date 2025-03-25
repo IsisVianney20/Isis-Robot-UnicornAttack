@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Isis Robot UnicornAttack.sln"
+    "dotnet.defaultSolution": "Isis-Robot-UnicornAttack.sln"
 }
