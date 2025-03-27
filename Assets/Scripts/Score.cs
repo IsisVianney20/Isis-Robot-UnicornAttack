@@ -14,8 +14,6 @@ public class Score : MonoBehaviour
 
    [SerializeField]
    private UnityEvent<int> onSetFinalScore;
-   [SerializeField]
-   private int scoreNumber = 3;
 
    public void Initialize()
    {

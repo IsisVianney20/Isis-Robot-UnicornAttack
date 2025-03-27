@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlatformInstantiate : MonoBehaviour
@@ -8,8 +9,8 @@ public class PlatformInstantiate : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> safePlatforms;
-    [SerializeField]
-    private float distanceBetweenPlatforms = 2f;
+    //[SerializeField]
+   // private float distanceBetweenPlatforms = 2f;
     [SerializeField]
     private int initialPlatforms = 10;
     private float offsetPositionX = 0f;
@@ -27,7 +28,7 @@ public class PlatformInstantiate : MonoBehaviour
     {
         for (int i = 0; i < amount; i++)
         {
-            List<GameObject> platformsToUse = platformsIndex < 2 ? safePlatforms : platforms;
+            List<GameObject> platformsToUse = platformsIndex < 2 ? safePlatforms : this.platforms;
             int randomIndex = Random.Range(0, platformsToUse.Count);
              if (offsetPositionX != 0) 
             {
@@ -38,19 +39,6 @@ public class PlatformInstantiate : MonoBehaviour
             platform.transform.SetParent(transform);
             platform.transform.localPosition = new Vector3(offsetPositionX, 0,0);
             platformsIndex++;
-            
-            /*else
-            {
-                 if (offsetPositionX != 0) 
-            {
-                offsetPositionX += platforms[0].GetComponent<BoxCollider>().size.x * 0.5f;
-            }
-            GameObject platform = Instantiate(platforms[0], Vector3.zero, Quaternion.identity);
-            offsetPositionX += distanceBetweenPlatforms + platform.GetComponent<BoxCollider>().size.x * 0.5f;
-            platform.transform.SetParent(transform);
-            platform.transform.localPosition = new Vector3(offsetPositionX, 0,0);
-            }*/
-           
         }
     }
 

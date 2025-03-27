@@ -6,7 +6,7 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private float jumpForce = 5f;
     [SerializeField]
-    private float maxJumpForce = 0.3f;
+    private float maxJumpTime = 0.3f;
 
     [SerializeField]
     private float jumpBoost;
@@ -26,7 +26,7 @@ public class Jump : MonoBehaviour
     private bool buttonPressed;
 
     private bool canJump = true;
-    private float maxJumpTime;
+   
     [SerializeField]
     private UnityEvent AnimationJump;
 
@@ -77,15 +77,18 @@ public class Jump : MonoBehaviour
     }
     private void HandleJump()
     {
-        if (jumpTimeCounter > 0)
+        if (buttonPressed && isJumping)
         {
-            rb.linearVelocity = Vector3.up * (jumpForce + jumpBoost);
-            jumpTimeCounter -= Time.deltaTime;
-            AnimationJump?.Invoke();
-        }
-        else
-        { 
-            isJumping = false;
+          if (jumpTimeCounter > 0)
+            {
+                rb.linearVelocity = Vector3.up * (jumpForce + jumpBoost);
+                jumpTimeCounter -= Time.deltaTime;
+                AnimationJump?.Invoke();
+            }
+            else
+            { 
+                isJumping = false;
+            }
         }
     }
     private void OnCollisionEnter(Collision collision)
