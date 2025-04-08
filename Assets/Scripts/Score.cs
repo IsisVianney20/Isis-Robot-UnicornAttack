@@ -8,14 +8,22 @@ public class Score : MonoBehaviour
    private int currentScore = 0;
 
    [SerializeField]
-   private UnityEvent<int> onScoreChange;
+   private UnityEvent<int> onScoreChanged;
    [SerializeField]
    private UnityEvent<int> onSetScore;
 
    [SerializeField]
    private UnityEvent<int> onSetFinalScore;
 
-   public void Initialize()
+   [SerializeField]
+   private UnityEvent<string> onSetHighScore;
+
+    private void Start()
+    {
+        SaveHighScore(0);
+    }
+
+    public void Initialize()
    {
       currentScore = 0;
       scores.Clear();
@@ -23,9 +31,14 @@ public class Score : MonoBehaviour
    public void SetScore(int score)
    {
       currentScore = score;
-      onScoreChange?.Invoke(currentScore);
+      onScoreChanged?.Invoke(currentScore);
    }
 
+   public void AddScore(int score)
+   {
+     currentScore += score;
+     onScoreChanged?.Invoke(currentScore);
+   }
    public void PlayerLose()
    {
     scores.Add(currentScore);
@@ -42,5 +55,20 @@ public class Score : MonoBehaviour
      }  
     onSetFinalScore?.Invoke(finalScore);
     scores.Clear();
+   }
+
+   private void SaveHighScore(int score)
+   {
+      int oldScore = PlayerPrefs.GetInt("HighScore", 0);
+      if (score > oldScore)
+      {
+         PlayerPrefs.SetInt("HighScore", score);
+         PlayerPrefs.Save();
+      }
+      else
+      {
+         score = oldScore;
+      }
+      onSetHighScore?.Invoke(score.ToString());
    }
 }
