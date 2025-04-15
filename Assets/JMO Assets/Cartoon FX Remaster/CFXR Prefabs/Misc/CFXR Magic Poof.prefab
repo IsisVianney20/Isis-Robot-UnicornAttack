@@ -4737,7 +4737,6 @@ GameObject:
   - component: {fileID: 9157105887693424661}
   - component: {fileID: 114473157489228906}
   - component: {fileID: -7128599851029362952}
-  - component: {fileID: 8888486389035006108}
   m_Layer: 0
   m_Name: CFXR Magic Poof
   m_TagString: FxTemporaire
@@ -4772,7 +4771,7 @@ ParticleSystem:
   serializedVersion: 8
   lengthInSec: 1.5
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 1
   cullingMode: 1
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -9516,19 +9515,6 @@ MonoBehaviour:
   onDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8888486389035006108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9157105887711914197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec640690c958de4189dcacf083707db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondsToDesactivate: 5
 --- !u!1 &9157105887711914199
 GameObject:
   m_ObjectHideFlags: 0

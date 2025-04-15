@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 63714781268026782, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_Size.x
+      value: 9.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 63714781268026782, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_Size.z
+      value: 8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 63714781268026782, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -59,6 +67,22 @@ PrefabInstance:
     - target: {fileID: 4048870644937105340, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
       propertyPath: m_TagString
       value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300611711525904606, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300611711525904606, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300611711525904606, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300611711525904606, guid: 12a07e473e6357c4a9bad0f972d4f232, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

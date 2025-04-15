@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 7ebbde3614f0a8f4f8a5dbde58cbd54c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 311173
+  packageName: Haon SD Creature Pack
+  packageVersion: 2025.0
+  assetPath: Assets/Haon SD series Pack/Creature/Animation/AnimFbx_Rabbit_MotionSetC.FBX
+  uploadId: 733196
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -162,7 +169,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -290,10 +297,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311173
-  packageName: Haon SD Creature Pack
-  packageVersion: 2025.0
-  assetPath: Assets/Haon SD series Pack/Creature/Animation/AnimFbx_Rabbit_MotionSetC.FBX
-  uploadId: 733196

@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 3ff52943b2c405c4289ef8aed81ab82b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 311173
+  packageName: Haon SD Creature Pack
+  packageVersion: 2025.0
+  assetPath: Assets/Haon SD series Pack/Creature/Animation/AnimFbx_Rabbit_MotionSetA.FBX
+  uploadId: 733196
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -122,13 +129,13 @@ ModelImporter:
     second: walk
   - first:
       74: 7400004
-    second: Anim_rabbit_walk_injured
+    second: Anim_rabbit_Walk
   - first:
       74: 7400006
     second: Anim_rabbit_dance
   - first:
       74: 7400008
-    second: Anim_rabbit_dieA
+    second: Anim_rabbit_DieA
   - first:
       74: 7400010
     second: Anim_rabbit_died
@@ -237,7 +244,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_rabbit_walk_injured
+      name: Anim_rabbit_Walk
       takeName: Take 001
       internalID: 0
       firstFrame: 250
@@ -367,7 +374,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_rabbit_dieA
+      name: Anim_rabbit_DieA
       takeName: Take 001
       internalID: 0
       firstFrame: 370
@@ -701,10 +708,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311173
-  packageName: Haon SD Creature Pack
-  packageVersion: 2025.0
-  assetPath: Assets/Haon SD series Pack/Creature/Animation/AnimFbx_Rabbit_MotionSetA.FBX
-  uploadId: 733196
