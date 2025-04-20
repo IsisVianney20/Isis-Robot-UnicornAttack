@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        DontDestroyOnLoad(gameObject); // Prevent this GameObject from being destroyed
         secondsToRestart+= secondsToShowGameOverScreen;
         finalSecondsToRestart+= secondsToShowGameOverScreen;
     }

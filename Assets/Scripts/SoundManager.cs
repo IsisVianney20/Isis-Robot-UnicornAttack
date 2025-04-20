@@ -18,7 +18,8 @@ public class SoundManager : MonoBehaviour
     {
         if(instance == null){
             instance = this;
-        }else if(instance != this){
+        }else if(instance != this)
+        {
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
@@ -82,9 +83,7 @@ public class SoundManager : MonoBehaviour
 
         masterMixer.SetFloat("masterVolume",volume);
     }
-
-    public void ChangeMusicPitch(float pitch)
-    {
+    public void ChangeMusicPitch(float pitch){
         musicS.pitch = pitch;
     }
 }

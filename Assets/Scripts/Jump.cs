@@ -13,8 +13,11 @@ public class Jump : MonoBehaviour
     private int maxJumps = 2;
     [SerializeField]
     private UnityEvent onJump;
+    
     [SerializeField]
     private UnityEvent onLand;
+    [SerializeField]	
+    private UnityEvent onFall;
     private int jumps;
     private Rigidbody rb;
     private bool isGrounded;
@@ -60,7 +63,6 @@ public class Jump : MonoBehaviour
     public void EndJump()
     {
         buttonPressed = false;
-        isJumping = false;
     }
 
     private void Update()

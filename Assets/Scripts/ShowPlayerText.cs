@@ -3,11 +3,12 @@ using UnityEngine.UI;
 
 public class ShowPlayerText : MonoBehaviour
 {
-  [SerializeField]
-  private Text playerText;
-  [SerializeField]
-  private string animationName = "ShowText";
-  private Animator textAnimator;
+   [SerializeField]
+    private Text playerText;
+
+    private Animator textAnimator;
+
+    public string animationName = "ShowText";
 
     private void Start()
     {
@@ -17,6 +18,6 @@ public class ShowPlayerText : MonoBehaviour
     public void ShowText(string text)
     {
         playerText.text = text;
-        textAnimator.SetTrigger(animationName);
+        textAnimator.Play(animationName);
     }
 }
