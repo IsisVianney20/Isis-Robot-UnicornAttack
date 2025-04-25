@@ -1,0 +1,5 @@
+C:/RobotUnicornAttack_IV/Isis Robot UnicornAttack/.utmp/RelWithDebInfo/4t5o5239/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/RobotUnicornAttack_IV/Isis Robot UnicornAttack/.utmp/RelWithDebInfo/4t5o5239/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/RobotUnicornAttack_IV/Isis Robot UnicornAttack/.utmp/RelWithDebInfo/4t5o5239/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/RobotUnicornAttack_IV/Isis Robot UnicornAttack/.utmp/RelWithDebInfo/4t5o5239/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/RobotUnicornAttack_IV/Isis Robot UnicornAttack/.utmp/RelWithDebInfo/4t5o5239/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

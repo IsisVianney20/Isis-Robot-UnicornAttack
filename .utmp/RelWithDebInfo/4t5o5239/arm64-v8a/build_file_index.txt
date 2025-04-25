@@ -1,0 +1,2 @@
+C:\RobotUnicornAttack_IV\Isis Robot UnicornAttack\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\RobotUnicornAttack_IV\Isis Robot UnicornAttack\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
